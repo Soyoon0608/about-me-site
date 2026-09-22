@@ -37,14 +37,16 @@ a:hover {
   text-decoration: underline;
 }
 
+
 /* =========================================
-   상단 네비게이션
+   상단
    ========================================= */
 
 .topbar {
   position: sticky;
   top: 0;
   z-index: 100;
+
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -54,10 +56,11 @@ a:hover {
 
   background: rgba(247, 244, 238, 0.95);
   border-bottom: 1px solid var(--rule);
+
   backdrop-filter: blur(8px);
 }
 
-.topbar-title {
+.topbar-name {
   font-family: var(--serif);
   font-size: 1.05rem;
   font-weight: 700;
@@ -79,25 +82,30 @@ a:hover {
   text-decoration: none;
 }
 
+
 /* =========================================
-   Hero
+   첫 화면
    ========================================= */
 
 .hero {
+  width: 100%;
   max-width: 900px;
+
   margin: 0 auto;
   padding: 120px 32px 90px;
 }
 
 .hero-eyebrow {
   margin: 0 0 18px;
+
   color: var(--ink-soft);
   font-size: 0.9rem;
   letter-spacing: 0.08em;
 }
 
-.hero-title {
+.hero-name {
   margin: 0;
+
   font-family: var(--serif);
   font-size: clamp(2.5rem, 6vw, 5rem);
   font-weight: 700;
@@ -105,12 +113,36 @@ a:hover {
   letter-spacing: -0.04em;
 }
 
-.hero-lede {
+.hero-line {
   max-width: 620px;
+
   margin: 28px 0 0;
+
   color: var(--ink-soft);
   font-size: 1.05rem;
 }
+
+.hero-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+
+  margin-top: 32px;
+}
+
+.hero-link {
+  padding: 8px 14px;
+
+  border: 1px solid var(--rule);
+  border-radius: 999px;
+
+  font-size: 0.88rem;
+}
+
+.hero-link:hover {
+  text-decoration: none;
+}
+
 
 /* =========================================
    일반 Section
@@ -119,13 +151,16 @@ a:hover {
 .section {
   width: 100%;
   max-width: 760px;
+
   margin: 0 auto;
   padding: 70px 32px;
+
   scroll-margin-top: 80px;
 }
 
 .section-title {
   margin: 0 0 14px;
+
   font-family: var(--serif);
   font-size: 1.8rem;
   font-weight: 700;
@@ -134,106 +169,143 @@ a:hover {
 
 .section-lede {
   max-width: 56ch;
+
   margin: 0 0 40px;
+
   color: var(--ink-soft);
 }
 
 .section-note {
   margin: 24px 0 0;
+
   color: var(--ink-soft);
   font-size: 0.88rem;
 }
 
+
 /* =========================================
-   배경이 있는 Section
+   회색 배경 Section
    ========================================= */
 
 .section-muted {
   width: 100%;
   max-width: none;
+
   margin: 0;
   padding: 70px 0;
+
   background: var(--paper-soft);
+
   scroll-margin-top: 80px;
 }
 
-/*
-  핵심:
-  배경은 화면 전체를 사용하지만,
-  내부 내용은 정확히 가운데에 위치시킨다.
-*/
-.section-muted > * {
-  width: 100%;
+
+/* =========================================
+   ★ 핵심 중앙 영역
+   숫자 / 문서의 실제 콘텐츠를
+   하나의 760px 영역 안에서 중앙 배치
+   ========================================= */
+
+.section-inner {
+  width: calc(100% - 64px);
   max-width: 760px;
+
   margin-left: auto;
   margin-right: auto;
-  padding-left: 32px;
-  padding-right: 32px;
-  box-sizing: border-box;
+
+  padding: 0;
 }
+
 
 /* =========================================
    이야기
    ========================================= */
 
-.story {
-  display: flex;
-  flex-direction: column;
-  gap: 28px;
-}
-
-.story p {
+.timeline {
   margin: 0;
+  padding: 0;
+
+  list-style: none;
 }
 
-.story-block {
-  margin: 0;
+.timeline-item {
+  display: grid;
+
+  grid-template-columns: 80px 1fr;
+  gap: 24px;
+
+  padding: 28px 0;
+
+  border-top: 1px solid var(--rule);
 }
 
-.story-block + .story-block {
-  margin-top: 28px;
+.timeline-item:last-child {
+  border-bottom: 1px solid var(--rule);
 }
+
+.timeline-date {
+  color: var(--ink-soft);
+  font-size: 0.88rem;
+}
+
+.timeline-body h3 {
+  margin: 0 0 12px;
+
+  font-family: var(--serif);
+  font-size: 1.2rem;
+}
+
+.timeline-body p {
+  margin: 0 0 14px;
+}
+
+.timeline-tag {
+  display: inline-block;
+
+  margin-right: 8px;
+  padding: 3px 8px;
+
+  border: 1px solid var(--rule);
+  border-radius: 999px;
+
+  color: var(--ink-soft);
+  font-size: 0.78rem;
+}
+
+.timeline-source {
+  color: var(--ink-soft);
+  font-size: 0.78rem;
+}
+
 
 /* =========================================
    숫자
    ========================================= */
 
-/*
-  숫자 영역 전체를 중앙 기준으로 정렬
-*/
-#numbers {
+.numbers-inner {
   text-align: center;
 }
 
-/*
-  숫자 제목
-*/
-#numbers .section-title {
-  width: 100%;
-  max-width: 760px;
+.numbers-inner .section-title {
+  text-align: center;
+}
+
+.numbers-inner .section-lede {
+  max-width: 620px;
+
   margin-left: auto;
   margin-right: auto;
+
   text-align: center;
 }
 
-/*
-  숫자 설명
-*/
-#numbers .section-lede {
-  width: 100%;
-  max-width: 620px;
-  margin: 0 auto 40px;
-  text-align: center;
-}
 
-/*
-  숫자 카드 영역
-*/
-#numbers .stat-grid {
+/* 숫자 카드 */
+
+.stat-grid {
   display: grid;
 
   width: 100%;
-  max-width: 760px;
 
   margin: 0 auto;
 
@@ -243,80 +315,93 @@ a:hover {
   text-align: left;
 }
 
-/*
-  숫자 카드
-*/
 .stat-card {
+  width: 100%;
+
   padding: 28px 26px;
 
   background: var(--paper);
-  border: 1px solid var(--rule);
-}
 
-.stat-label {
-  margin: 0 0 8px;
-  color: var(--ink-soft);
-  font-size: 0.86rem;
+  border: 1px solid var(--rule);
 }
 
 .stat-value {
   margin: 0;
+
   font-family: var(--serif);
   font-size: 2rem;
   font-weight: 700;
   line-height: 1.2;
 }
 
-.stat-desc {
-  margin: 10px 0 0;
-  color: var(--ink-soft);
-  font-size: 0.9rem;
+.stat-unit,
+.stat-slash {
+  font-size: 0.65em;
 }
 
-/*
-  숫자 업데이트 문구
-*/
-#numbers .section-note {
-  width: 100%;
-  max-width: 760px;
-  margin: 24px auto 0;
+.stat-label {
+  margin-top: 10px;
+
+  color: var(--ink-soft);
+  font-size: 0.86rem;
+}
+
+.stat-source {
+  margin-top: 6px;
+
+  color: var(--ink-soft);
+  font-size: 0.76rem;
+}
+
+.numbers-inner .section-note {
+  margin-left: auto;
+  margin-right: auto;
+
   text-align: center;
 }
+
 
 /* =========================================
    대표작
    ========================================= */
 
-#work {
-  text-align: left;
-}
-
-.work-intro {
-  margin: 0 0 32px;
-  color: var(--ink-soft);
-}
-
 .work-card {
+  margin-top: 24px;
   padding: 30px;
 
   background: var(--paper-soft);
+
   border: 1px solid var(--rule);
 }
 
+.work-kicker {
+  margin: 0 0 10px;
+
+  color: var(--ink-soft);
+  font-size: 0.85rem;
+}
+
 .work-title {
-  margin: 0 0 14px;
+  margin: 0 0 8px;
+
   font-family: var(--serif);
   font-size: 1.5rem;
   line-height: 1.4;
 }
 
-.work-description {
-  margin: 0;
+.work-subtitle {
+  margin: 0 0 22px;
+
   color: var(--ink-soft);
+}
+
+.work-desc {
+  margin: 0;
 }
 
 .work-stats {
   display: grid;
+
   grid-template-columns: repeat(3, 1fr);
   gap: 24px;
 
@@ -326,54 +411,60 @@ a:hover {
   border-top: 1px solid var(--rule);
 }
 
-.work-stat-label {
-  margin: 0 0 4px;
-  color: var(--ink-soft);
-  font-size: 0.8rem;
+.work-stat {
+  display: flex;
+  flex-direction: column;
 }
 
 .work-stat-value {
-  margin: 0;
   font-family: var(--serif);
   font-size: 1.3rem;
   font-weight: 700;
 }
 
+.work-stat-label {
+  color: var(--ink-soft);
+  font-size: 0.8rem;
+}
+
+.work-limits {
+  margin: 24px 0 0;
+
+  color: var(--ink-soft);
+  font-size: 0.86rem;
+}
+
+.work-card-placeholder {
+  margin-top: 20px;
+}
+
+
 /* =========================================
    문서
    ========================================= */
 
-/*
-  문서 영역도 제목/설명은 중앙
-*/
-#docs {
+.docs-inner {
   text-align: center;
 }
 
-#docs .section-title {
-  width: 100%;
-  max-width: 760px;
+.docs-inner .section-title {
+  text-align: center;
+}
+
+.docs-inner .section-lede {
+  max-width: 620px;
+
   margin-left: auto;
   margin-right: auto;
+
   text-align: center;
 }
 
-#docs .section-lede {
-  width: 100%;
-  max-width: 620px;
-  margin: 0 auto 40px;
-  text-align: center;
-}
 
-/*
-  문서 목록 '박스 자체'를 중앙으로 이동
-  안의 문서명은 왼쪽 정렬 유지
-*/
-#docs .doc-list {
-  display: block;
+/* 문서 목록 자체가 중앙 */
 
+.doc-list {
   width: 100%;
-  max-width: 760px;
 
   margin: 0 auto;
   padding: 0;
@@ -385,11 +476,9 @@ a:hover {
   text-align: left;
 }
 
-/*
-  문서 한 줄
-*/
 .doc-item {
   width: 100%;
+
   margin: 0;
   padding: 0;
 
@@ -400,12 +489,12 @@ a:hover {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 20px;
 
   width: 100%;
+
   padding: 18px 0;
 
-  color: var(--ink);
+  gap: 20px;
 }
 
 .doc-item a:hover {
@@ -419,15 +508,17 @@ a:hover {
 
 .doc-ext {
   flex: 0 0 auto;
+
   color: var(--ink-soft);
   font-size: 0.85rem;
 }
+
 
 /* =========================================
    Footer
    ========================================= */
 
-footer {
+.footer {
   padding: 40px 32px;
 
   color: var(--ink-soft);
@@ -437,6 +528,7 @@ footer {
   border-top: 1px solid var(--rule);
 }
 
+
 /* =========================================
    Code
    ========================================= */
@@ -445,15 +537,18 @@ code {
   padding: 2px 5px;
 
   background: var(--paper-soft);
+
   border-radius: 3px;
 
-  font-family: "SFMono-Regular", Consolas, "Liberation Mono",
-    monospace;
+  font-family: "SFMono-Regular", Consolas,
+    "Liberation Mono", monospace;
+
   font-size: 0.9em;
 }
 
+
 /* =========================================
-   Responsive
+   모바일
    ========================================= */
 
 @media (max-width: 640px) {
@@ -470,45 +565,61 @@ code {
     font-size: 0.82rem;
   }
 
+
   .hero {
     padding: 90px 20px 60px;
   }
 
-  .hero-title {
+  .hero-name {
     font-size: 2.7rem;
   }
+
 
   .section {
     padding: 50px 20px;
   }
 
+
   .section-muted {
     padding: 50px 0;
   }
 
-  .section-muted > * {
-    width: 100%;
-    max-width: 760px;
-    padding-left: 20px;
-    padding-right: 20px;
+
+  /* ★ 모바일에서도 중앙 */
+  .section-inner {
+    width: calc(100% - 40px);
+    max-width: none;
   }
+
 
   /* 숫자 */
-  #numbers .section-lede,
-  #numbers .stat-grid,
-  #numbers .section-note {
-    width: 100%;
-  }
 
-  #numbers .stat-grid {
+  .stat-grid {
     grid-template-columns: 1fr;
   }
 
-  /* 문서 */
-  #docs .section-lede,
-  #docs .doc-list {
-    width: 100%;
+
+  /* 이야기 */
+
+  .timeline-item {
+    grid-template-columns: 1fr;
+    gap: 8px;
   }
+
+
+  /* 대표작 */
+
+  .work-card {
+    padding: 24px;
+  }
+
+  .work-stats {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+
+  /* 문서 */
 
   .doc-item a {
     gap: 12px;
@@ -518,13 +629,4 @@ code {
     overflow-wrap: anywhere;
   }
 
-  /* 대표작 */
-  .work-stats {
-    grid-template-columns: 1fr;
-    gap: 20px;
-  }
-
-  .work-card {
-    padding: 24px;
-  }
 }
