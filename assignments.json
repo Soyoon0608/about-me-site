@@ -1,0 +1,20 @@
+{
+  "source": "내 제출 현황",
+  "total": 13,
+  "submitted": 8,
+  "items": [
+    { "no": 1, "name": "my-portfolio", "submitted": true },
+    { "no": 2, "name": "mini-game", "submitted": true },
+    { "no": 3, "name": "mini-card-studio", "submitted": true },
+    { "no": 4, "name": "today-info-board", "submitted": true },
+    { "no": 5, "name": "plan-do-see-diary", "submitted": true },
+    { "no": 6, "name": "passkey-intro-page", "submitted": true },
+    { "no": 7, "name": "과제 7", "submitted": false },
+    { "no": 8, "name": "과제 8", "submitted": false },
+    { "no": 9, "name": "성장 서사 문서 (강점 지도·자기소개서 초안)", "submitted": true },
+    { "no": 10, "name": "AI와 함께 쓰는 첫 논문 (피싱 메일 탐지 성능 분석)", "submitted": true },
+    { "no": 11, "name": "과제 11", "submitted": false },
+    { "no": 12, "name": "A. 나를 소개하는 사이트, 그리고 계속 새로 쓰는 장치", "submitted": false },
+    { "no": 13, "name": "대표작 웹앱 (예정)", "submitted": false }
+  ]
+}
