@@ -1,1 +1,6 @@
-
+{
+  "source": "내 출석 기록",
+  "total_days": 27,
+  "attended_days": 26,
+  "rate_percent": 96.3
+}
