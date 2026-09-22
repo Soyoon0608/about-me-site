@@ -630,3 +630,52 @@ code {
   }
 
 }
+/* Card 1 · 자기소개 본편 */
+
+.story-main {
+  margin: 3rem 0 4rem;
+  padding: 2.5rem;
+  border: 1px solid var(--line, #ddd);
+  border-radius: 18px;
+  background: var(--surface, #fff);
+}
+
+.story-main .work-kicker {
+  margin-bottom: 0.8rem;
+}
+
+.story-main .work-title {
+  margin-bottom: 2rem;
+}
+
+.story-main p {
+  line-height: 1.9;
+  margin-bottom: 1.4rem;
+}
+
+.ability-mark {
+  display: flex;
+  align-items: baseline;
+  gap: 0.8rem;
+  margin: 1.8rem 0 2rem;
+  padding: 0.9rem 1rem;
+  border-left: 3px solid currentColor;
+  background: rgba(0, 0, 0, 0.025);
+}
+
+.ability-mark strong {
+  white-space: nowrap;
+}
+
+.ability-mark span {
+  font-size: 0.9rem;
+  opacity: 0.75;
+}
+
+.story-evidence {
+  margin-top: 3rem;
+}
+
+.story-evidence .work-kicker {
+  margin-bottom: 0.8rem;
+}
