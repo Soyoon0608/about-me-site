@@ -481,3 +481,52 @@ button:focus-visible {
     scroll-behavior: auto;
   }
 }
+/* 숫자 · 문서 섹션 가운데 정렬 */
+#numbers,
+#docs {
+  text-align: center;
+}
+
+/* 숫자 설명 */
+#numbers .section-lede,
+#docs .section-lede {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* 숫자 카드 */
+#numbers .stat-grid {
+  width: 100%;
+  max-width: 760px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* 숫자 업데이트 문구 */
+#numbers .section-note {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* 문서 목록 */
+#docs .doc-list {
+  width: 100%;
+  max-width: 760px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: left;
+}
+
+/* 제목도 확실하게 가운데 */
+#numbers .section-title,
+#docs .section-title {
+  text-align: center;
+}
+
+/* 모바일 */
+@media (max-width: 640px) {
+  #numbers .stat-grid,
+  #docs .doc-list {
+    width: 100%;
+  }
+}
