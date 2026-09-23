@@ -6,8 +6,12 @@ import re
 
 
 ROOT = Path(__file__).resolve().parents[1]
+
 INPUT = ROOT / "input"
-OUTPUT = ROOT / "output"
+
+# 기존 output 폴더의 파일을 건드리지 않기 위해
+# Card 5 결과는 별도의 하위 폴더에 저장한다.
+OUTPUT = ROOT / "output" / "card5"
 
 
 ABILITY_TEMPLATES = {
@@ -47,12 +51,14 @@ def clean(text):
     return re.sub(r"\s+", " ", str(text)).strip()
 
 
+# 입력 파일 읽기
 rituals = read_csv("ritual_records.csv")
 assignments = read_csv("assignments.csv")
 attendance = load_json("attendance.json")
 approved = load_json("approved_candidates.json")["approved"]
 
 
+# 결정적인 결과를 만들기 위해 입력 순서를 정렬
 rituals.sort(
     key=lambda x: (
         x["date"],
@@ -74,6 +80,7 @@ approved.sort(
 )
 
 
+# 능력별 기록 수 계산
 ability_counts = {}
 
 for record in rituals:
@@ -84,6 +91,7 @@ for record in rituals:
     )
 
 
+# 숫자 결과
 numbers = {
     "attendance": attendance,
 
@@ -115,6 +123,7 @@ numbers = {
 }
 
 
+# 능력별 후보 문장 생성
 candidates = []
 
 for record in rituals:
@@ -137,6 +146,7 @@ for record in rituals:
     candidates.append(candidate)
 
 
+# 후보 결과도 정렬
 candidates.sort(
     key=lambda x: (
         x["ability"],
@@ -146,6 +156,7 @@ candidates.sort(
 )
 
 
+# 승인된 후보만 사이트 반영 대상으로 사용
 approved_output = {
     "approval_rule":
         "사이트 반영 대상은 approved_candidates.json에 명시적으로 승인된 문장만 사용.",
@@ -172,6 +183,14 @@ def write_json(filename, data):
     )
 
 
+# Card 5 전용 output 폴더 생성
+OUTPUT.mkdir(
+    parents=True,
+    exist_ok=True
+)
+
+
+# 결과 파일 생성
 write_json(
     "numbers.json",
     numbers
@@ -191,6 +210,7 @@ write_json(
 )
 
 
+# 실행 결과 설명
 manifest = {
     "input_files": [
         "ritual_records.csv",
@@ -199,15 +219,22 @@ manifest = {
         "approved_candidates.json"
     ],
 
+    "output_directory":
+        "output/card5",
+
     "output_files": [
         "numbers.json",
         "candidates.json",
-        "approved_candidates.json"
+        "approved_candidates.json",
+        "manifest.json",
+        "result.sha256"
     ],
 
     "deterministic": True,
 
-    "approval_only_for_site": True
+    "approval_only_for_site": True,
+
+    "existing_output_preserved": True
 }
 
 
@@ -217,6 +244,7 @@ write_json(
 )
 
 
+# JSON 결과 파일을 기준으로 SHA-256 생성
 hash_object = hashlib.sha256()
 
 for path in sorted(
@@ -244,11 +272,16 @@ result_hash = hash_object.hexdigest()
 
 
 print("Card5 generation complete.")
+
 print(
     f"rituals={len(rituals)}, "
     f"assignments={len(assignments)}, "
     f"candidates={len(candidates)}, "
     f"approved={len(approved)}"
+)
+
+print(
+    f"output directory={OUTPUT}"
 )
 
 print(
