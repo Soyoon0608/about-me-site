@@ -1,0 +1,42 @@
+{
+  "approval_rule": "사이트 반영 대상은 approved_candidates.json에 명시적으로 승인된 문장만 사용.",
+  "approved_count": 6,
+  "items": [
+    {
+      "ability": "공감·배려",
+      "date": "2026-09-11",
+      "sentence": "해커톤 팀 활동에서 구성원의 의견을 듣고 역할과 소통을 조율함.",
+      "evidence": "팀 구성원의 의견을 듣고 역할을 조율한 기록."
+    },
+    {
+      "ability": "끈기·문제해결력",
+      "date": "2026-08-28",
+      "sentence": "GNS3 OSPF NSSA 실습에서 발생한 문제의 원인을 확인하고 설정을 수정하며 해결함.",
+      "evidence": "GNS3 OSPF NSSA 설정 문제를 끝까지 확인하고 해결한 기록."
+    },
+    {
+      "ability": "끈기·문제해결력",
+      "date": "2026-09-16",
+      "sentence": "GitHub 코드 복구 과정에서 원인을 확인하고 필요한 코드를 직접 수정함.",
+      "evidence": "Plan-Do-See Diary 코드 복구 과정에서 문제를 확인하고 수정한 기록."
+    },
+    {
+      "ability": "끈기·문제해결력",
+      "date": "2026-09-21",
+      "sentence": "네트워크 보안 실습에서 예상과 다른 결과의 원인을 확인하며 해결함.",
+      "evidence": "ping과 Metasploit 실습 결과를 확인하고 원인을 찾아 해결한 기록."
+    },
+    {
+      "ability": "자기주도성",
+      "date": "2026-09-23",
+      "sentence": "반복적인 데이터 정리 업무를 더 효율적으로 처리할 방법을 직접 찾아 Python 도구를 적용함.",
+      "evidence": "공공데이터 인턴에서 pandas와 openpyxl을 활용해 반복 업무를 개선한 경험."
+    },
+    {
+      "ability": "책임감",
+      "date": "2026-09-14",
+      "sentence": "아동 안전 앱 해커톤에서 팀을 이끌고 역할을 조율했으며 장려상을 받음.",
+      "evidence": "팀 리더로 역할을 조율하고 해커톤 장려상을 받은 경험."
+    }
+  ]
+}
