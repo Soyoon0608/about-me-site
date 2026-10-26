@@ -1,12 +1,8 @@
-김소윤 About Me — Graphite & Silver 문서 연동 버전
+About Me 스타일 복구용 독립 HTML
 
-포함: index.html, style.css, script.js
+1. index.html 하나만 기존 GitHub 저장소 최상위에 업로드하세요.
+2. documents 폴더와 보고서 4개는 그대로 유지하세요.
+3. 몇 분 후 Ctrl+Shift+R로 강력 새로고침하세요.
+4. 여전히 동일하면 GitHub Pages Actions 배포 상태를 확인하세요.
 
-기존 GitHub 저장소 about-me-site의 documents/ 폴더에 있는 파일 4개로 연결합니다:
-- documents/네트워크보안_포트폴리오.pptx
-- documents/김소윤_네트워크_보안_설정_및_통신_검증_보고서.docx
-- documents/김소윤_웹취약점분석_포트폴리오.pptx
-- documents/김소윤_웹취약점분석_최종보고서.docx
-
-이 ZIP에는 개인정보 및 기타 기존 documents 파일은 포함하지 않았습니다. 로컬에서 문서까지 확인하려면 기존 documents 폴더도 이 폴더 아래에 복사하세요.
-GitHub Pages에 적용하려면 기존 repo 루트에 index.html, style.css, script.js를 업로드하고 documents/ 폴더는 그대로 유지하세요.
+기존 index.html을 백업한 다음 교체하세요. style.css, script.js는 삭제할 필요 없습니다.
