@@ -1,17 +1,9 @@
-김소윤 정보보안 포트폴리오 시안
+PREMIUM PORTFOLIO / 김소윤
 
-포함 파일
-- index.html
-- style.css
-- script.js
-- README.txt
-
-설명
-- 아이보리 배경 + 차콜 텍스트 + 세이지 그린 포인트로 구성된 취업용 포트폴리오 시안입니다.
-- ABOUT / SKILLS / PROJECTS / EXPERIENCE / DOCUMENTS 중심으로 재구성했습니다.
-- ALEPH Security Defense Challenge(6차 진행 중)를 대표 프로젝트로 포함했습니다.
-
-적용 방법
-1. 압축을 푼 뒤 index.html을 브라우저에서 열어 확인합니다.
-2. 기존 GitHub Pages 저장소에 index.html, style.css, script.js를 교체 업로드합니다.
-3. 기존 documents 폴더는 그대로 유지해야 문서 링크가 작동합니다.
+index.html / style.css / script.js : 새 홈페이지 파일
+기존 저장소 about-me-site 의 루트 파일 3개를 교체하면 됩니다.
+기존 documents/ 폴더는 반드시 유지해야 문서 링크가 동작합니다.
+GitHub 저장소의 input/, output/, source/, src/ 파일은 수정하지 않습니다.
+6차 ALEPH 방어전은 진행 중으로 표기했습니다. 완료 후 검증된 결과로 변경하세요.
+인터넷 연결 없이 열면 Google Fonts 대신 시스템 글꼴이 나타날 수 있습니다.
+개인정보가 있는 이력서·자기소개서는 공개 전 검토하세요.

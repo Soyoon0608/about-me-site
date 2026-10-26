@@ -1,266 +1,164 @@
 <!DOCTYPE html>
+
 <html lang="ko">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>김소윤 | Security Portfolio</title>
-  <meta name="description" content="김소윤의 정보보안 포트폴리오 — 네트워크 보안, 웹 취약점 분석, 보안 프로젝트, 실습 경험" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="style.css" />
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>김소윤 | Security Portfolio</title>
+<meta content="김소윤의 정보보안 포트폴리오 — 네트워크 보안, 웹 취약점 분석, 보안 프로젝트, 실습 경험" name="description"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="style.css" rel="stylesheet"/>
 </head>
 <body>
-  <header class="site-header">
-    <div class="container header-inner">
-      <a href="#home" class="logo">KIM SOYOON</a>
-      <button class="menu-toggle" id="menuToggle" aria-label="메뉴 열기">☰</button>
-      <nav class="nav" id="mainNav" aria-label="주요 메뉴">
-        <a href="#about">ABOUT</a>
-        <a href="#skills">SKILLS</a>
-        <a href="#projects">PROJECTS</a>
-        <a href="#experience">EXPERIENCE</a>
-        <a href="#documents">DOCUMENTS</a>
-      </nav>
-    </div>
-  </header>
+<header class="site-header">
+<div class="container header-inner">
+<a class="logo" href="#home">SOYOON.</a>
+<button aria-label="메뉴 열기" class="menu-toggle" id="menuToggle">☰</button>
+<nav aria-label="주요 메뉴" class="nav" id="mainNav"><a href="#projects">PROJECTS</a><a href="#about">ABOUT</a><a href="#skills">SKILLS</a><a href="#experience">EXPERIENCE</a><a href="#documents">DOCUMENTS</a></nav>
+</div>
+</header>
+<main>
 
-  <main>
-    <section class="hero" id="home">
-      <div class="container hero-inner">
-        <p class="eyebrow">SECURITY &amp; NETWORK PORTFOLIO</p>
-        <h1>문제의 원인을 분석하고,<br />해결을 검증합니다.</h1>
-        <p class="hero-desc">
-          네트워크 구성 및 장애 분석, 웹 취약점 분석, Linux 서버 운영 실습과 프로젝트 경험을 바탕으로
-          정보보안 역량을 쌓아가고 있습니다.
-        </p>
-        <div class="hero-tags" aria-label="주요 키워드">
-          <span>Network Security</span>
-          <span>Web Security</span>
-          <span>Linux</span>
-          <span>Python</span>
-        </div>
-        <div class="hero-actions">
-          <a class="btn btn-primary" href="#projects">프로젝트 보기</a>
-          <a class="btn btn-secondary" href="https://github.com/Soyoon0608" target="_blank" rel="noopener noreferrer">GitHub</a>
-        </div>
-      </div>
-    </section>
 
-    <section class="section" id="about">
-      <div class="container narrow">
-        <p class="section-label">ABOUT</p>
-        <h2>문제를 끝까지 확인하는 태도로 성장하고 있습니다.</h2>
-        <p class="section-intro">
+
+
+
+
+<section class="hero" id="home">
+<div class="container hero-inner"><div class="hero-copy"><p class="eyebrow"><span class="dot"></span> SECURITY PORTFOLIO / 2026</p><p class="hero-name">KIM SOYOON <span>— 김소윤</span></p><h1>문제의 원인을 찾고,<br/><em>해결을 검증합니다.</em></h1><p class="hero-desc">네트워크부터 웹 애플리케이션까지.<br/>구성하고, 분석하고, 개선하며 신뢰할 수 있는 시스템을 만들어갑니다.</p><div class="hero-actions"><a class="btn btn-primary" href="#projects">프로젝트 살펴보기 <span>↗</span></a><a class="btn btn-text" href="https://github.com/Soyoon0608" rel="noopener noreferrer" target="_blank">GitHub ↗</a></div></div><div aria-label="보안 프로젝트를 상징하는 그래픽" class="hero-art"><div class="art-top"><span>PORTFOLIO / OVERVIEW</span><span>● ● ●</span></div><div class="art-grid"><div class="art-orbit"><div class="orbit-center">S<span>/</span></div></div><div class="art-code"><span>01 / ANALYZE</span><strong>Network</strong><span>02 / VALIDATE</span><strong>Security</strong><span>03 / IMPROVE</span><strong>Systems</strong></div></div><div class="art-bottom">BUILT WITH CURIOSITY <span>→</span> VERIFIED WITH EVIDENCE</div></div></div>
+</section><section class="section" id="projects"><div class="container"><div class="section-heading"><div><p class="section-label">01 / SELECTED WORK</p><h2>Selected <em>Projects.</em></h2><p class="section-lead">직접 구현하고 문제를 분석하며 검증한 경험을 중심으로 소개합니다.</p></div><span class="heading-side">EXPLORE THE WORK ↓</span></div><article class="featured"><div class="featured-visual"><div class="visual-top"><span class="live-dot"></span> ALEPH DEFENSE LAB <span class="visual-step">06 / IN PROGRESS</span></div><div class="terminal"><div class="terminal-bar"><i></i><i></i><i></i><span>security / defense / validate</span></div><div class="terminal-lines"><span><b>→</b> requirements.validate()</span><span><b>✓</b> implementation.review()</span><span><b>✓</b> deployment.check()</span><span class="terminal-highlight"><b>↻</b> defense.phase(6) // ongoing</span></div></div><div class="visual-foot">DESIGN <span>→</span> BUILD <span>→</span> VERIFY</div></div><div class="featured-copy"><div class="feature-meta"><span>FEATURED PROJECT / 01</span><span class="status">6차 진행 중</span></div><h3>ALEPH Security<br/>Defense Challenge</h3><p>단계별 보안 요구사항을 분석하고 구현·수정·테스트·배포를 반복하는 실습 프로젝트입니다. 완료한 기능과 검증 결과는 확인된 범위만 소개합니다.</p><div class="feature-tags">JavaScript <span>·</span> Node.js <span>·</span> GitHub <span>·</span> Vercel</div><a class="feature-link" href="https://github.com/Soyoon0608/aleph-defense-starter" rel="noopener noreferrer" target="_blank">프로젝트 저장소 보기 <span>↗</span></a></div></article><div class="project-heading"><h3>More Projects <span>(06)</span></h3><span>SECURITY / RESEARCH / DEVELOPMENT</span></div><div class="project-gallery"><article class="project-tile"><div class="tile-mark">01 <span>NETWORK</span></div><div class="tile-visual tile-network"><div class="network-nodes"><span></span><span></span><span></span><span></span><span></span></div></div><h4>네트워크 보안 구축 및 통신 검증</h4><p>GNS3 기반 라우팅·보안 설정을 구성하고 통신 결과를 확인한 실습</p><small>GNS3 · OSPF · IPSec</small><a href="./documents/네트워크보안_포트폴리오.pptx">관련 문서 보기 ↗</a></article><article class="project-tile"><div class="tile-mark">02 <span>WEB SECURITY</span></div><div class="tile-visual tile-web"><div class="web-window"><span>HTTP / RESPONSE</span><strong>403</strong><small>Access policy / analysis</small></div></div><h4>웹 애플리케이션 취약점 분석</h4><p>실습 환경에서 SQLi·XSS 등 취약점의 재현, 원인, 개선 방향 분석</p><small>Burp Suite · DVWA · bWAPP</small><a href="./documents/김소윤_웹취약점분석_최종보고서.docx">관련 문서 보기 ↗</a></article><article class="project-tile"><div class="tile-mark">03 <span>AI SECURITY</span></div><div class="tile-visual tile-ai"><div class="ai-stat"><span>PHISHING DETECTION STUDY</span><strong>40<small> samples</small></strong><span>실험 조건과 한계 분석</span></div></div><h4>생성형 AI 피싱 이메일 탐지 연구</h4><p>피싱 30건·정상 10건을 대상으로 분류 성능을 평가한 연구</p><small>Phishing · AI · Analysis</small><a href="./documents/10번_대표작_생성형AI피싱이메일탐지성능분석.docx">연구 문서 보기 ↗</a></article><article class="project-tile"><div class="tile-mark">04 <span>AUTHENTICATION</span></div><div class="tile-visual tile-passkey"><div class="key-circle">✦<span>PASSKEY</span></div></div><h4>Passkey 인증 구현</h4><p>WebAuthn 기반 패스키 등록·로그인 과정을 구현한 인증 실습</p><small>WebAuthn · JavaScript</small><a href="https://github.com/Soyoon0608/passkey-intro-page" rel="noopener noreferrer" target="_blank">GitHub 보기 ↗</a></article><article class="project-tile"><div class="tile-mark">05 <span>WEB APPLICATION</span></div><div class="tile-visual tile-check"><div class="check-envelope">✉<span>CHECK / VERIFY</span></div></div><h4>피싱 이메일 셀프 점검 도구</h4><p>긴급성·개인정보 요구 등 위험 신호를 직접 점검하는 웹앱</p><small>HTML · CSS · JavaScript</small><a href="https://soyoon0608.github.io/about-me-site/phishing-check/" rel="noopener noreferrer" target="_blank">프로젝트 보기 ↗</a></article><article class="project-tile"><div class="tile-mark">06 <span>DEVELOPMENT</span></div><div class="tile-visual tile-code"><div class="code-visual"><span>const projects = [</span><span>  'mini-game',</span><span>  'card-studio',</span><span>  'plan-do-see'</span><span>];</span></div></div><h4>SK 알레프 개발 과제</h4><p>미니게임·카드 스튜디오·Plan-Do-See 등 웹 개발 과제</p><small>JavaScript · Supabase · RLS</small><a href="https://github.com/Soyoon0608" rel="noopener noreferrer" target="_blank">GitHub 프로젝트 보기 ↗</a></article></div></div></section><section class="section" id="about">
+<div class="container narrow">
+<p class="section-label">02 / ABOUT ME</p>
+<h2 class="simple-heading">문제를 끝까지 확인하는 태도로 성장하고 있습니다.</h2>
+<p class="section-intro">
           저는 이해되지 않는 문제를 그냥 넘기지 않고, 원인을 끝까지 확인하려는 사람입니다.
         </p>
-        <div class="about-copy">
-          <p>
+<div class="about-copy">
+<p>
             공공데이터 인턴으로 근무하며 Python을 활용한 데이터 정제와 업무 자동화를 경험했고,
             디지털튜터로 활동하면서 교육용 기기와 네트워크, 계정 및 접속 오류를 해결하며 현장에서 기술이 어떻게 활용되는지 배웠습니다.
           </p>
-          <p>
+<p>
             이후 정보보호학을 공부하며 네트워크, 운영체제, 정보보호의 기초를 쌓고,
             GNS3 기반 네트워크 구성, 웹 취약점 분석, Linux 서버 운영, 인증 및 보안 프로젝트를 직접 실습했습니다.
           </p>
-          <p>
+<p>
             특히 통신이 되지 않는 네트워크 환경이나 예상대로 동작하지 않는 웹 서비스 앞에서,
             처음부터 다시 만드는 대신 설정과 흐름을 하나씩 확인하며 원인을 좁혀 나가는 과정을 중요하게 생각합니다.
           </p>
-          <p>
+<p>
             앞으로도 문제의 원인을 정확하게 분석하고, 해결 결과를 검증하며,
             안정적인 IT 환경을 만드는 정보보안 엔지니어로 성장하고자 합니다.
           </p>
-        </div>
-      </div>
-    </section>
-
-    <section class="section section-soft" id="skills">
-      <div class="container">
-        <p class="section-label">SKILLS</p>
-        <h2>학습하고 실습한 기술을 중심으로 정리했습니다.</h2>
-        <div class="skills-grid">
-          <article class="card skill-card">
-            <span class="card-kicker">01 · NETWORK</span>
-            <h3>네트워크 구성 및 분석</h3>
-            <p>GNS3 기반 라우팅 구성, VLAN, OSPF, IPSec, NAT/PAT, 통신 흐름 점검 및 장애 분석</p>
-            <ul class="chip-list">
-              <li>GNS3</li><li>Cisco</li><li>Wireshark</li><li>Routing</li>
-            </ul>
-          </article>
-          <article class="card skill-card">
-            <span class="card-kicker">02 · WEB SECURITY</span>
-            <h3>웹 취약점 분석</h3>
-            <p>DVWA, bWAPP, Juice Shop 환경에서 SQL Injection, XSS, IDOR, File Upload 취약점 분석</p>
-            <ul class="chip-list">
-              <li>Burp Suite</li><li>SQLi</li><li>XSS</li><li>OWASP</li>
-            </ul>
-          </article>
-          <article class="card skill-card">
-            <span class="card-kicker">03 · SYSTEM</span>
-            <h3>서버 운영 및 보안</h3>
-            <p>Linux 서버 운영, iptables 실습, Apache/PHP 환경 구성, Prometheus · Grafana 모니터링</p>
-            <ul class="chip-list">
-              <li>Linux</li><li>iptables</li><li>Apache</li><li>Grafana</li>
-            </ul>
-          </article>
-          <article class="card skill-card">
-            <span class="card-kicker">04 · DEVELOPMENT</span>
-            <h3>개발 및 자동화</h3>
-            <p>Python 기반 데이터 처리 및 자동화, JavaScript 기반 웹 서비스 구현, Supabase 인증 실습</p>
-            <ul class="chip-list">
-              <li>Python</li><li>JavaScript</li><li>SQL</li><li>Supabase</li>
-            </ul>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section class="section" id="projects">
-      <div class="container">
-        <p class="section-label">PROJECTS</p>
-        <h2>실습과 과제를 결과물로 연결한 프로젝트입니다.</h2>
-
-        <article class="card featured-project">
-          <div class="featured-head">
-            <div>
-              <span class="project-status">진행 중</span>
-              <h3>ALEPH Security Defense Challenge</h3>
-              <p class="project-sub">SK 알레프 방어전 프로젝트 · 6차 진행 중</p>
-            </div>
-            <a class="text-link" href="https://github.com/Soyoon0608/aleph-defense-starter" target="_blank" rel="noopener noreferrer">GitHub 보기 ↗</a>
-          </div>
-          <p>
-            단계별 보안 요구사항을 분석하고, 기능 구현 · 수정 · 테스트 · 배포를 반복하며 완성도를 높이는 방어전 프로젝트입니다.
-            현재 6차 방어전을 진행 중이며, 완료 후 검증 결과와 구현 내용을 반영할 예정입니다.
-          </p>
-          <ul class="bullet-list">
-            <li>보안 요구사항 분석과 구현</li>
-            <li>오류 수정 및 동작 검증</li>
-            <li>GitHub 기반 형상 관리 및 배포 경험</li>
-          </ul>
-          <ul class="chip-list">
-            <li>JavaScript</li><li>Node.js</li><li>GitHub</li><li>Vercel</li>
-          </ul>
-        </article>
-
-        <div class="project-grid">
-          <article class="card project-card">
-            <span class="card-kicker">NETWORK SECURITY</span>
-            <h3>네트워크 보안 구축 및 통신 검증</h3>
-            <p>네트워크 구성과 보안 설정을 실습하고, 통신 흐름 및 검증 결과를 포트폴리오와 보고서로 정리했습니다.</p>
-            <ul class="chip-list"><li>GNS3</li><li>OSPF</li><li>IPSec</li><li>Routing</li></ul>
-          </article>
-
-          <article class="card project-card">
-            <span class="card-kicker">WEB SECURITY</span>
-            <h3>웹 취약점 분석 포트폴리오</h3>
-            <p>bWAPP, DVWA, OWASP Juice Shop 실습 환경에서 취약점의 발생 원인과 재현 결과, 개선 방향을 정리했습니다.</p>
-            <ul class="chip-list"><li>Burp Suite</li><li>SQLi</li><li>XSS</li><li>Juice Shop</li></ul>
-          </article>
-
-          <article class="card project-card">
-            <span class="card-kicker">RESEARCH</span>
-            <h3>생성형 AI의 피싱 이메일 탐지 성능 분석</h3>
-            <p>피싱 이메일 30건과 정상 이메일 10건을 바탕으로 생성형 AI 모델의 탐지 성능을 분석한 연구입니다.</p>
-            <ul class="chip-list"><li>Phishing</li><li>AI</li><li>Research</li><li>Analysis</li></ul>
-          </article>
-
-          <article class="card project-card">
-            <span class="card-kicker">AUTHENTICATION</span>
-            <h3>Passkey 인증 구현</h3>
-            <p>WebAuthn 기반 패스키 인증 과제를 수행하며 사용자 인증 흐름과 보안성을 실습했습니다.</p>
-            <ul class="chip-list"><li>WebAuthn</li><li>Passkey</li><li>JavaScript</li></ul>
-          </article>
-
-          <article class="card project-card">
-            <span class="card-kicker">WEB APP</span>
-            <h3>피싱 이메일 셀프 점검 도구</h3>
-            <p>논문에서 분석한 위험 신호를 기반으로 사용자가 직접 메일을 점검할 수 있도록 구성한 웹앱입니다.</p>
-            <ul class="chip-list"><li>HTML</li><li>CSS</li><li>JavaScript</li></ul>
-          </article>
-
-          <article class="card project-card">
-            <span class="card-kicker">DEVELOPMENT</span>
-            <h3>SK 알레프 과제 프로젝트</h3>
-            <p>미니게임, 카드 스튜디오, 정보판, Plan-Do-See 등 다양한 과제를 통해 개발 경험과 구현 역량을 쌓았습니다.</p>
-            <ul class="chip-list"><li>Mini Game</li><li>Card Studio</li><li>Supabase</li><li>RLS</li></ul>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section class="section section-soft" id="experience">
-      <div class="container">
-        <p class="section-label">EXPERIENCE</p>
-        <h2>기술을 현장 문제 해결과 연결한 경험입니다.</h2>
-        <div class="timeline">
-          <article class="timeline-item">
-            <div class="timeline-date">2024.10 – 2026.06</div>
-            <div class="timeline-content">
-              <h3>디지털튜터</h3>
-              <p>교육용 단말, 네트워크, 계정 및 접속 오류를 지원하며 수업 환경이 안정적으로 유지되도록 현장 IT 지원을 수행했습니다.</p>
-            </div>
-          </article>
-          <article class="timeline-item">
-            <div class="timeline-date">2022.03 – 2022.07</div>
-            <div class="timeline-content">
-              <h3>한국자산관리공사 인턴</h3>
-              <p>자료 확인 및 정리, 서류 검토, 민원 응대 등 업무 지원을 수행하며 문서 정확성과 처리 흐름을 익혔습니다.</p>
-            </div>
-          </article>
-          <article class="timeline-item">
-            <div class="timeline-date">2021.07 – 2021.12</div>
-            <div class="timeline-content">
-              <h3>공공데이터 인턴</h3>
-              <p>데이터 수집 · 정제 · 오류 확인과 함께 Python, pandas, openpyxl을 활용한 자동화 작업을 수행했습니다.</p>
-            </div>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section class="section" id="documents">
-      <div class="container">
-        <p class="section-label">DOCUMENTS</p>
-        <h2>이력서와 프로젝트 문서를 연결할 수 있도록 준비했습니다.</h2>
-        <div class="docs-grid">
-          <a class="doc-card" href="./documents/이력서.docx">
-            <strong>이력서</strong>
-            <span>Resume · .docx</span>
-          </a>
-          <a class="doc-card" href="./documents/자기소개서.docx">
-            <strong>자기소개서</strong>
-            <span>Cover Letter · .docx</span>
-          </a>
-          <a class="doc-card" href="./documents/경력기술서.docx">
-            <strong>경력기술서</strong>
-            <span>Career Description · .docx</span>
-          </a>
-          <a class="doc-card" href="./documents/김소윤_웹취약점분석_최종보고서.docx">
-            <strong>웹 취약점 분석 보고서</strong>
-            <span>Report · .docx</span>
-          </a>
-          <a class="doc-card" href="./documents/네트워크보안_포트폴리오.pptx">
-            <strong>네트워크 보안 포트폴리오</strong>
-            <span>Portfolio · .pptx</span>
-          </a>
-          <a class="doc-card" href="./documents/10번_대표작_생성형AI피싱이메일탐지성능분석.docx">
-            <strong>피싱 이메일 탐지 연구</strong>
-            <span>Research · .docx</span>
-          </a>
-        </div>
-      </div>
-    </section>
-  </main>
-
-  <footer class="site-footer">
-    <div class="container footer-inner">
-      <p>© 김소윤 · Security Portfolio</p>
-      <p>기존 프로젝트 및 문서 구조를 고려해 구성한 포트폴리오 시안입니다.</p>
-    </div>
-  </footer>
-
-  <script src="script.js"></script>
+</div>
+</div>
+</section><section class="section section-soft" id="skills">
+<div class="container">
+<p class="section-label">03 / CAPABILITIES</p>
+<h2 class="simple-heading">학습하고 실습한 기술을 중심으로 정리했습니다.</h2>
+<div class="skills-grid">
+<article class="card skill-card">
+<span class="card-kicker">01 · NETWORK</span>
+<h3>네트워크 구성 및 분석</h3>
+<p>GNS3 기반 라우팅 구성, VLAN, OSPF, IPSec, NAT/PAT, 통신 흐름 점검 및 장애 분석</p>
+<ul class="chip-list">
+<li>GNS3</li><li>Cisco</li><li>Wireshark</li><li>Routing</li>
+</ul>
+</article>
+<article class="card skill-card">
+<span class="card-kicker">02 · WEB SECURITY</span>
+<h3>웹 취약점 분석</h3>
+<p>DVWA, bWAPP, Juice Shop 환경에서 SQL Injection, XSS, IDOR, File Upload 취약점 분석</p>
+<ul class="chip-list">
+<li>Burp Suite</li><li>SQLi</li><li>XSS</li><li>OWASP</li>
+</ul>
+</article>
+<article class="card skill-card">
+<span class="card-kicker">03 · SYSTEM</span>
+<h3>서버 운영 및 보안</h3>
+<p>Linux 서버 운영, iptables 실습, Apache/PHP 환경 구성, Prometheus · Grafana 모니터링</p>
+<ul class="chip-list">
+<li>Linux</li><li>iptables</li><li>Apache</li><li>Grafana</li>
+</ul>
+</article>
+<article class="card skill-card">
+<span class="card-kicker">04 · DEVELOPMENT</span>
+<h3>개발 및 자동화</h3>
+<p>Python 기반 데이터 처리 및 자동화, JavaScript 기반 웹 서비스 구현, Supabase 인증 실습</p>
+<ul class="chip-list">
+<li>Python</li><li>JavaScript</li><li>SQL</li><li>Supabase</li>
+</ul>
+</article>
+</div>
+</div>
+</section><section class="section section-soft" id="experience">
+<div class="container">
+<p class="section-label">04 / EXPERIENCE</p>
+<h2 class="simple-heading">기술을 현장 문제 해결과 연결한 경험입니다.</h2>
+<div class="timeline">
+<article class="timeline-item">
+<div class="timeline-date">2024.10 – 2026.06</div>
+<div class="timeline-content">
+<h3>디지털튜터</h3>
+<p>교육용 단말, 네트워크, 계정 및 접속 오류를 지원하며 수업 환경이 안정적으로 유지되도록 현장 IT 지원을 수행했습니다.</p>
+</div>
+</article>
+<article class="timeline-item">
+<div class="timeline-date">2022.03 – 2022.07</div>
+<div class="timeline-content">
+<h3>한국자산관리공사 인턴</h3>
+<p>자료 확인 및 정리, 서류 검토, 민원 응대 등 업무 지원을 수행하며 문서 정확성과 처리 흐름을 익혔습니다.</p>
+</div>
+</article>
+<article class="timeline-item">
+<div class="timeline-date">2021.07 – 2021.12</div>
+<div class="timeline-content">
+<h3>공공데이터 인턴</h3>
+<p>데이터 수집 · 정제 · 오류 확인과 함께 Python, pandas, openpyxl을 활용한 자동화 작업을 수행했습니다.</p>
+</div>
+</article>
+</div>
+</div>
+</section><section class="section" id="documents">
+<div class="container">
+<p class="section-label">05 / DOCUMENTS</p>
+<h2 class="simple-heading">이력서와 프로젝트 문서를 연결할 수 있도록 준비했습니다.</h2>
+<div class="docs-grid">
+<a class="doc-card" href="./documents/이력서.docx">
+<strong>이력서</strong>
+<span>Resume · .docx</span>
+</a>
+<a class="doc-card" href="./documents/자기소개서.docx">
+<strong>자기소개서</strong>
+<span>Cover Letter · .docx</span>
+</a>
+<a class="doc-card" href="./documents/경력기술서.docx">
+<strong>경력기술서</strong>
+<span>Career Description · .docx</span>
+</a>
+<a class="doc-card" href="./documents/김소윤_웹취약점분석_최종보고서.docx">
+<strong>웹 취약점 분석 보고서</strong>
+<span>Report · .docx</span>
+</a>
+<a class="doc-card" href="./documents/네트워크보안_포트폴리오.pptx">
+<strong>네트워크 보안 포트폴리오</strong>
+<span>Portfolio · .pptx</span>
+</a>
+<a class="doc-card" href="./documents/10번_대표작_생성형AI피싱이메일탐지성능분석.docx">
+<strong>피싱 이메일 탐지 연구</strong>
+<span>Research · .docx</span>
+</a>
+</div>
+</div>
+</section></main>
+<footer class="site-footer">
+<div class="container footer-inner">
+<p>© 김소윤 · Security Portfolio</p>
+<p>Built to learn. Built to verify.</p>
+</div>
+</footer>
+<script src="script.js"></script>
 </body>
 </html>
