@@ -1,9 +1,13 @@
-다크 네이비 About Me 완성 HTML 포함 버전
+김소윤 네트워크·정보보안 포트폴리오 v2
 
-포함: index.html, style.css, portfolio-theme.css, script.js
-미포함: 기존 documents/, input/, output/, source/, src/ 폴더 (원래 GitHub 저장소에 그대로 두세요)
+파일: index.html, style.css, script.js
 
-미리보기: 이 폴더의 index.html을 더블클릭
-배포: 원래 GitHub 저장소의 index.html/style.css/script.js를 백업 후 교체하고 portfolio-theme.css를 추가. 나머지 폴더는 건드리지 마세요.
-주의: 이 HTML은 기존 공개 페이지의 주요 본문/프로젝트/문서 경로를 유지해 제작한 완성형 재구성본입니다. 원본 HTML의 완전한 바이트 단위 복제는 아닙니다. 정확한 원본 콘텐츠를 100% 유지하려면 기존 저장소에서 제공하는 원본 index.html에 포함된 apply_theme.py 실행 방식을 사용하세요.
-공개용 이력서 및 문서의 개인정보를 반드시 확인하세요.
+미리보기: index.html 더블클릭 (인터넷 연결 시 웹폰트 로딩)
+
+기존 GitHub about-me-site/main의 index.html, style.css, script.js만 교체하세요.
+기존 documents/, input/, output/, source/, src/, phishing-check/ 등 다른 폴더와 파일은 삭제하지 마세요.
+
+주의: 이 ZIP에는 documents 파일을 포함하지 않습니다. 기존 저장소에서 링크가 연결됩니다.
+이력서와 자기소개서 문서 링크는 새로 작성하기 전까지 새 페이지에 표시하지 않습니다. 기존 공개 저장소 문서와 기록의 접근 권한은 별도로 확인하세요.
+기존 성장 기록은 새로운 메인 화면에서 제외했으며 원본 저장소를 수정하거나 삭제하지 않았습니다.
+기존 사이트 내용은 별도 ORIGINAL_CONTENT_BACKUP.html 파일에 참고용으로 보존했습니다. 이 파일은 공개 GitHub 저장소에 업로드하지 마세요.
