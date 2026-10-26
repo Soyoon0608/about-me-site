@@ -1,13 +1,17 @@
-김소윤 네트워크·정보보안 포트폴리오 v2
+김소윤 정보보안 포트폴리오 시안
 
-파일: index.html, style.css, script.js
+포함 파일
+- index.html
+- style.css
+- script.js
+- README.txt
 
-미리보기: index.html 더블클릭 (인터넷 연결 시 웹폰트 로딩)
+설명
+- 아이보리 배경 + 차콜 텍스트 + 세이지 그린 포인트로 구성된 취업용 포트폴리오 시안입니다.
+- ABOUT / SKILLS / PROJECTS / EXPERIENCE / DOCUMENTS 중심으로 재구성했습니다.
+- ALEPH Security Defense Challenge(6차 진행 중)를 대표 프로젝트로 포함했습니다.
 
-기존 GitHub about-me-site/main의 index.html, style.css, script.js만 교체하세요.
-기존 documents/, input/, output/, source/, src/, phishing-check/ 등 다른 폴더와 파일은 삭제하지 마세요.
-
-주의: 이 ZIP에는 documents 파일을 포함하지 않습니다. 기존 저장소에서 링크가 연결됩니다.
-이력서와 자기소개서 문서 링크는 새로 작성하기 전까지 새 페이지에 표시하지 않습니다. 기존 공개 저장소 문서와 기록의 접근 권한은 별도로 확인하세요.
-기존 성장 기록은 새로운 메인 화면에서 제외했으며 원본 저장소를 수정하거나 삭제하지 않았습니다.
-기존 사이트 내용은 별도 ORIGINAL_CONTENT_BACKUP.html 파일에 참고용으로 보존했습니다. 이 파일은 공개 GitHub 저장소에 업로드하지 마세요.
+적용 방법
+1. 압축을 푼 뒤 index.html을 브라우저에서 열어 확인합니다.
+2. 기존 GitHub Pages 저장소에 index.html, style.css, script.js를 교체 업로드합니다.
+3. 기존 documents 폴더는 그대로 유지해야 문서 링크가 작동합니다.
