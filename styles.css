@@ -45,3 +45,16 @@ body{background:#FAF8F5;color:#1A1A1A}
 .doc-download{background:#E65100;color:white}.doc-download:hover{background:#F97316;color:white}
 @media(max-width:1000px){.featured-hero{grid-template-columns:1fr}.featured-hero .feature-copy{padding:35px}}
 @media(max-width:700px){.projects-grid,.documents-grid{grid-template-columns:1fr}.featured-hero .feature-copy,.featured-hero .feature-graphic{padding:25px}.project-art{min-height:165px}.project-body{padding:23px}.document-card{padding:22px}.experience-highlight{font-size:12px!important}}
+
+
+/* Documents: compact reference layout (2026-10-29) */
+.documents-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
+.document-card{padding:12px 13px 10px;border-radius:8px;min-height:114px;box-shadow:none;gap:0}
+.document-icon{width:18px;height:18px;border-radius:0;background:transparent;color:#E65100;font-size:17px;margin-bottom:4px;justify-content:flex-start}
+.document-info{flex:0 0 auto;width:100%}
+.document-info .document-type{display:block;color:#77716B;font:10px 'Fira Code',monospace;letter-spacing:0;margin-top:5px}
+.document-info h3{font-size:14px;letter-spacing:-.2px;font-weight:500;margin:2px 0 3px;line-height:1.45}
+.document-actions{margin-top:auto;display:block;width:100%}
+.document-actions .doc-download{width:100%;min-height:28px;padding:5px 9px;border-radius:5px;font-size:11px;font-weight:700;background:#E65100;color:#fff}
+@media(max-width:700px){.documents-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}.document-card{padding:10px;min-width:0}.document-info h3{font-size:12px;word-break:keep-all}.document-actions .doc-download{font-size:10px}}
+@media(max-width:400px){.documents-grid{grid-template-columns:1fr}}
