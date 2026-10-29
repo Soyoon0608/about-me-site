@@ -17,3 +17,31 @@ body{background:#FAF8F5;color:#1A1A1A}
 .project-art{background:#F4EDE6}.art-web{background:#EFECEA}.art-ai{background:#F6F0E7}.art-auth{background:#EBF2ED}.art-check{background:#F0EEF4}.art-dev{background:#F4ECEF}.project-art strong{color:#C94E07}.project-art small,.project-art span{color:#7C6C60}.project-links,.timeline article,.documents a{border-color:#E7DED5}.muted-link,.documents small{color:#79736E}.timeline article>span{color:#89827C}
 .contact{background:#F2E9E1;border-top:1px solid #E7D7C9}.contact p{color:#67605A}.foot-inner{color:#817970}
 @media(max-width:700px){.nav-links{background:#FAF8F5;border-color:#E5DDD4}}
+
+
+/* UI improvements — wide featured project / 2-column work / document cards / experience highlights */
+.projects-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:24px}
+.featured-hero{grid-template-columns:1.15fr 1fr;margin-bottom:30px;min-height:390px}
+.featured-hero .feature-copy{padding:54px}
+.featured-hero h3{font-size:clamp(30px,3.5vw,47px);line-height:1.17}
+.featured-hero .feature-copy>p{font-size:15px;line-height:1.9;max-width:550px}
+.featured-hero .feature-graphic{padding:45px}
+.project-art{min-height:195px;padding:26px}
+.project-body{padding:29px}
+.project-body h3{font-size:20px;line-height:1.45}
+.project-body p{font-size:14px;line-height:1.85}
+.project-card{box-shadow:0 10px 35px #392a1d0a}
+.experience-highlight{margin-top:13px!important;padding:12px 16px;border-left:3px solid #E65100;background:#fff;border-radius:0 7px 7px 0;color:#423A32!important;font-size:13px!important;line-height:1.8}
+.documents-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px}
+.document-card{display:flex;flex-direction:column;align-items:flex-start;padding:28px;background:#fff;border:1px solid #E8DED5;border-radius:12px;box-shadow:0 9px 26px #3e2f2009;transition:transform .2s,border-color .2s}
+.document-card:hover{transform:translateY(-3px);border-color:#E6510077}
+.document-icon{display:flex;align-items:center;justify-content:center;background:#FFF0E4;border-radius:10px;width:46px;height:46px;color:#E65100;font-size:25px;margin-bottom:17px}
+.document-info{flex:1}.document-type{font:10px 'Fira Code',monospace;letter-spacing:1.2px;color:#B64B0E;font-weight:600}
+.document-info h3{font-size:19px;margin:7px 0 6px;color:#1A1A1A;letter-spacing:-.4px}
+.document-info p{font-size:13px;color:#716B65;margin:0 0 23px;line-height:1.75}
+.document-actions{width:100%;display:flex;gap:9px;flex-wrap:wrap;margin-top:auto}
+.doc-btn{display:inline-flex;justify-content:center;align-items:center;min-height:40px;padding:9px 14px;border-radius:7px;font-size:12px;font-weight:700;text-decoration:none;white-space:nowrap}
+.doc-view{border:1px solid #D8D0C8;background:#F5F2EE;color:#96908B;cursor:not-allowed}
+.doc-download{background:#E65100;color:white}.doc-download:hover{background:#F97316;color:white}
+@media(max-width:1000px){.featured-hero{grid-template-columns:1fr}.featured-hero .feature-copy{padding:35px}}
+@media(max-width:700px){.projects-grid,.documents-grid{grid-template-columns:1fr}.featured-hero .feature-copy,.featured-hero .feature-graphic{padding:25px}.project-art{min-height:165px}.project-body{padding:23px}.document-card{padding:22px}.experience-highlight{font-size:12px!important}}
