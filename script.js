@@ -1,11 +1,1 @@
-const button = document.querySelector('#menu');
-const nav = document.querySelector('#nav');
-button?.addEventListener('click', () => {
-  const expanded = button.getAttribute('aria-expanded') === 'true';
-  button.setAttribute('aria-expanded', String(!expanded));
-  nav.classList.toggle('open', !expanded);
-});
-nav?.querySelectorAll('a').forEach(link => link.addEventListener('click', () => {
-  nav.classList.remove('open');
-  button?.setAttribute('aria-expanded', 'false');
-}));
+const menu=document.querySelector('.menu');const links=document.querySelector('.nav-links');menu.addEventListener('click',()=>{const isOpen=links.classList.toggle('open');menu.setAttribute('aria-expanded',String(isOpen));menu.textContent=isOpen?'✕':'☰';});links.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{links.classList.remove('open');menu.setAttribute('aria-expanded','false');menu.textContent='☰';}));
